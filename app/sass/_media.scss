@@ -348,6 +348,14 @@
       }
     }
   }
+
+  .politika {
+    max-width: 90%;
+    padding: 25px 15px;
+    &__title {
+      font-size: 16px;
+    }
+  }
 }
 
 
