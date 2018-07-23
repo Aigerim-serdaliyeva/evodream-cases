@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
+  <head>
 
   <meta charset="utf-8">
 
-  <title>Страница благодарности</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Международное агентство интернет-маркетинга</title>
+  <meta name="description" content="Международное агентство интернет-маркетинга  ">
+  <meta name="keywords" content="Международное агентство интернет-маркетинга, Создание и продвижение 
+  продающих сайтов для визовых центров, Создание лендинга, Адаптация сайта под мобильные телефоны и планшеты,
+  Медийная реклама,  Контекстная реклама, Сквозная аналитика, Система аналитики, CRM - система ">
 
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon.ico?v=10" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico?v=12" type="image/x-icon">
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -45,13 +47,13 @@
             <div class="container">
               <ul>
                 <li>
-                  <a class="link" href="#openvisa">Кейс 1. visa</a>
+                  <a class="link" href="/#openvisa">Кейс 1. visa</a>
                 </li>
                 <li>
-                  <a class="link" href="#infovisa">Кейс 2. InfoVisa</a>
+                  <a class="link" href="/#infovisa">Кейс 2. InfoVisa</a>
                 </li>
                 <li class="last">
-                  <a class="link" href="#contact">Контакты</a>
+                  <a class="link" href="/#contact">Контакты</a>
                 </li>
                 <li class="d-lg-none">
                   <a href="tel:+77273573242" class="text-phone" id="phone_number">+7 (727) 357-32-42</a>
@@ -115,10 +117,10 @@
     </footer>
   </div>
   
-  <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+  <div class="remodal remodal--small inverse" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>
 
-    <div class="remodal__title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
+    <div class="remodal__title">Оставьте заявку, и мы свяжемся с Вами!</div>
 
     <div class="form form--vertical">
       <form action="/mail.php" method="post">
@@ -126,17 +128,18 @@
           <input type="hidden" name="info" value="Обратный звонок">
 
           <div class="input-div">
-            <input type="text" class="input" name="name" placeholder="Имя">
-          </div>
-
-          <div class="input-div">
-            <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required>
+            <input type="text" class="input" name="name" placeholder="Введите имя*" required>
             <span class="error-message">Заполните это поле</span>
           </div>
 
-          <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
 
-          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+          <button class="button button--white ajax-submit" type="submit" id="zakazat_zvonok">Оставить заявку</button>
+
+          <div class="form__info">* Ваши данные в безопасности и не будут переданы третьим лицам</div>
         </div>
       </form>
     </div>
