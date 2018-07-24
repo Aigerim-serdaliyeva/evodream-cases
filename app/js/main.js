@@ -162,9 +162,52 @@ $(document).ready(function () {
 
   $(".pokazatel__block__img").click( function() {
     var $this = $(this);
-    var $block = $this.closest(".pokazatel__block");
-    
+    var $block = $this.closest(".pokazatel");
+    $block.find(".pokazatel__block__img").removeClass("active");
+    $this.addClass("active");
+    var id = $this.data("id");
+    $block.find(".pokazatel__block__bigimg").attr("src", "/img/big-pokazatel-" + id + ".jpg");
+    console.log($block.find(".pokazatel__block__bigimg"));
   });
+
+  if ($wnd.width() < 576) {    
+
+    $(".vopros").click( function () {
+      var $this = $(this);
+      var $tooltip = $this.find(".tooltip");
+      $tooltip.addClass("active");
+
+      if($tooltip.offset().left + $tooltip.width() > $wnd.width() - 30) {
+        $tooltip.addClass("tooltip--right");
+      } else {
+        $tooltip.removeClass("tooltip--right");
+      }
+    });
+  
+    $(".close").click( function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $(this).closest(".tooltip").removeClass("active");
+    });  
+  } else {
+    $(".vopros").mouseenter( function () {
+      var $this = $(this);
+      var $tooltip = $this.find(".tooltip");
+      
+      $tooltip.addClass("active");      
+      if($tooltip.offset().left + $tooltip.width() > $wnd.width() - 20) {
+        $tooltip.addClass("tooltip--right");
+      }
+    });
+
+    $(".vopros").mouseleave( function () {
+      var $this = $(this);
+      var $tooltip = $this.find(".tooltip");
+      $tooltip.removeClass("active");
+      $tooltip.removeClass("tooltip--right");
+    });
+  }
+
 
   $(".carousel-certificates").owlCarousel({
     loop: true,

@@ -183,7 +183,7 @@
             <h4 class="work__title">Создание лендинга 
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Лендосайт – это сайт, состоящий из продающих страниц, каждая из которых содержит форму захвата и побуждает посетителя на определенное целевое действие.  </div>
                 </div>
               </div> 
@@ -194,7 +194,7 @@
             <h4 class="work__title">Адаптация сайта под мобильные телефоны и планшеты
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Адаптация под мобильные телефоны и планшеты важна, так как большая часть интернет-пользователей использует именно их для поиска нужной информации</div>
                 </div>
               </div> 
@@ -205,7 +205,7 @@
             <h4 class="work__title">Медийная реклама
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Баннеры на различных сайтах, которые видит только Ваша целевая аудитория</div>
                 </div>
               </div>
@@ -216,7 +216,7 @@
             <h4 class="work__title">Контекстная реклама
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Контекстная реклама действует избирательно и отображается посетителям интернет-страницы, сфера интересов которых потенциально совпадает/пересекается с тематикой рекламируемого товара либо услуги, что повышает вероятность их отклика на рекламу.  </div>
                 </div>
               </div>
@@ -227,7 +227,7 @@
             <h4 class="work__title">Система аналитики
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Благодаря которой анализируются результаты контекстной рекламы и составляется стратегия повышения прибыли</div>
                 </div>
               </div>
@@ -238,7 +238,7 @@
             <h4 class="work__title">Сквозная аналитика
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Квизы (тесты, опросы, викторины) вовлекают и развлекают пользователей, в то время как посещаемость сайта и конверсия растут</div>
                 </div>
               </div>
@@ -249,7 +249,7 @@
             <h4 class="work__title">CRM - система
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Благодаря грамотно установленой CRM-системе:                    
                     <li>Увеличивается количество повторных покупок до 66%;</li>
                     <li>Снижаются потери клиентов в среднем на 77%;</li>
@@ -268,23 +268,26 @@
         <h2 class="section-title">Показатели контекстной рекламы в Google Adwords за период 26.10.2016-11.07.2018</h2>
         <div class="row">
           <div class="col-lg-5 col-md-12 text-center">
-            <img src="./img/big-pokazatel-1.jpg" alt="">
-            <div class="pokazatel__block">
-              <div class="pokazatel__block__img active">
-                <img src="./img/pokazatel-1.jpg" alt="">
-                <div class="pokazatel__block__title">Показатели</div>
-              </div>
-              <div class="pokazatel__block__img">
-                <img src="./img/pokazatel-2.jpg" alt="">
-                <div class="pokazatel__block__title">Скриншот
-                    заявок с почты</div>
-              </div>
-              <div class="pokazatel__block__img">
-                <img src="./img/pokazatel-3.jpg" alt="">
-                <div class="pokazatel__block__title">Примеры
-                    заявок с почты</div>
+            <div class="pokazatel">
+              <img class="pokazatel__block__bigimg" src="./img/big-pokazatel-1.jpg" alt="">
+              <div class="pokazatel__block">
+                <div class="pokazatel__block__img active" data-id="1">
+                  <img src="./img/pokazatel-1.jpg" alt="">
+                  <div class="pokazatel__block__title">Показатели</div>
+                </div>
+                <div class="pokazatel__block__img" data-id="2">
+                  <img src="./img/pokazatel-2.jpg" alt="">
+                  <div class="pokazatel__block__title">Скриншот
+                      заявок с почты</div>
+                </div>
+                <div class="pokazatel__block__img" data-id="3">
+                  <img src="./img/pokazatel-3.jpg" alt="">
+                  <div class="pokazatel__block__title">Примеры
+                      заявок с почты</div>
+                </div>
               </div>
             </div>
+            
           </div>
           <div class="col-lg-7 col-md-12">
             <table class="pokazatel__table text-center">
@@ -307,7 +310,7 @@
               <li>Конверсия сайта - 21%
                 <div class="vopros"><img src="./img/vopros.png" alt="">
                   <div class="tooltip">
-                    <a href="#" class="close"><i class="fa fa-times"></i></a>
+                    <div class="close"><i class="fa fa-times"></i></div>
                     <div class="tooltip_title">Соотношение количества посетителей сайта с количеством посетителей, оставившими заявку</div>
                   </div>
                 </div>
@@ -430,7 +433,7 @@
             <h4 class="work__title">Медийная реклама
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Баннеры на различных сайтах, которые видит только Ваша целевая аудитория</div>
                 </div>
               </div>
@@ -441,7 +444,7 @@
             <h4 class="work__title">Контекстная реклама
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Контекстная реклама действует избирательно и отображается посетителям интернет-страницы, сфера интересов которых потенциально совпадает/пересекается с тематикой рекламируемого товара либо услуги, что повышает вероятность их отклика на рекламу.  </div>
                 </div>
               </div>
@@ -452,7 +455,7 @@
             <h4 class="work__title">Система аналитики
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Благодаря которой анализируются результаты контекстной рекламы и составляется стратегия повышения прибыли</div>
                 </div>
               </div>
@@ -463,7 +466,7 @@
             <h4 class="work__title">Создание нового высококонверсионного лендинга спустя 1 месяц ведения старого лендинга
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Лендосайт – это сайт, состоящий из продающих страниц, каждая из которых содержит форму захвата и побуждает посетителя на определенное целевое действие.</div>
                 </div>
               </div>
@@ -474,7 +477,7 @@
             <h4 class="work__title">Адаптация сайта под мобильные телефоны и планшеты
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Адаптация под мобильные телефоны и планшеты важна, так как большая часть интернет-пользователей использует именно их для поиска нужной информации</div>
                 </div>
               </div>
@@ -485,7 +488,7 @@
             <h4 class="work__title">На лендинге создан квиз, который увеличил количество заявок на 40%
               <div class="vopros"><img src="./img/vopros.png" alt="">
                 <div class="tooltip">
-                  <a href="#" class="close"><i class="fa fa-times"></i></a>
+                  <div class="close"><i class="fa fa-times"></i></div>
                   <div class="tooltip_title">Квизы (тесты, опросы, викторины) вовлекают и развлекают пользователей, в то время как посещаемость сайта и конверсия растут</div>
                 </div>
               </div>
@@ -501,21 +504,23 @@
             в период с 11.06.2018 по 11.07.2018</h2>
         <div class="row">
           <div class="col-lg-5 col-md-12 text-center">
-            <img src="./img/big-pokazatel-2-1.jpg" alt="">
-            <div class="pokazatel__block">
-              <div class="pokazatel__block__img active">
-                <img src="./img/pokazatel-2-1.jpg" alt="">
-                <div class="pokazatel__block__title">Показатели</div>
-              </div>
-              <div class="pokazatel__block__img">
-                <img src="./img/pokazatel-2-2.jpg" alt="">
-                <div class="pokazatel__block__title">Скриншот
-                    заявок с почты</div>
-              </div>
-              <div class="pokazatel__block__img">
-                <img src="./img/pokazatel-2-3.jpg" alt="">
-                <div class="pokazatel__block__title">Примеры
-                    заявок с почты</div>
+            <div class="pokazatel">
+              <img class="pokazatel__block__bigimg" src="./img/big-pokazatel-2-1.jpg" alt="">
+              <div class="pokazatel__block">
+                <div class="pokazatel__block__img active" data-id="4">
+                  <img src="./img/pokazatel-2-1.jpg" alt="">
+                  <div class="pokazatel__block__title">Показатели</div>
+                </div>
+                <div class="pokazatel__block__img" data-id="5">
+                  <img src="./img/pokazatel-2-2.jpg" alt="">
+                  <div class="pokazatel__block__title">Скриншот
+                      заявок с почты</div>
+                </div>
+                <div class="pokazatel__block__img" data-id="6">
+                  <img src="./img/pokazatel-2-3.jpg" alt="">
+                  <div class="pokazatel__block__title">Примеры
+                      заявок с почты</div>
+                </div>
               </div>
             </div>
           </div>

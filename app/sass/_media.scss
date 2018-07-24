@@ -157,6 +157,13 @@
     }
   }
 
+  .tooltip {
+    width: 200px;
+    &--right {
+      // display: block;
+    }
+  }
+
   .section {
     &-title {
       font-size: 22px;
@@ -363,7 +370,7 @@
 
 // ≤576px
 @include media-breakpoint-up(sm) {
-  
+
 }
 
 // ≤768px
