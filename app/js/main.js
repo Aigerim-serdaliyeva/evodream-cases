@@ -160,6 +160,11 @@ $(document).ready(function () {
     }
   });
 
+  $(".pokazatel__block__img").click( function() {
+    var $this = $(this);
+    var $block = $this.closest(".pokazatel__block");
+    
+  });
 
   $(".carousel-certificates").owlCarousel({
     loop: true,
