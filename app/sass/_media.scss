@@ -263,14 +263,21 @@
     &-visa {
       .visa  {
         &__image {
-          display: block;
-          margin-bottom: 15px;
-          text-align: center;
-          img {
-            margin-right: 0;
-          }
+          display: none;
+          // display: block;
+          // margin-bottom: 15px;
+          // text-align: center;
+          // img {
+          //   margin-right: 0;
+          // }
         }
       }
+
+      .carousel-visa {
+        display: block;
+        // margin-bottom: 20px;
+      }
+
       ul {
         li {
           margin-bottom: 10px;
@@ -281,11 +288,17 @@
     &-pokazatel {
       .pokazatel {
         &__block {
-          display: block;
-          img {
-            display: block;
-            margin: 0 auto 10px;
+          // display: block;
+          flex-direction: column;
+          justify-content: center;
+          &__img {
+            display: inline-block;
+            margin-bottom: 10px;
           }
+          // img {
+          //   display: block;
+          //   margin: 0 auto 10px;
+          // }
         }
         &__table {
           th, td {

@@ -214,6 +214,17 @@ $(document).ready(function () {
     $this.hide();
   });
 
+  $(".carousel-visa").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+    },
+  });
+
+
   $(".carousel-certificates").owlCarousel({
     loop: true,
     smartSpeed: 500,
