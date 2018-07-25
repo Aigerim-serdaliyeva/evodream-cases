@@ -24,7 +24,7 @@ body {
   opacity: 1;
 }
 
-img {
+img, video {
   max-width: 100%;
 }
 
@@ -222,6 +222,9 @@ h1, h2, h3, h4, h5, h6 {
   &--white {
     background-color: #fff;
     color: #0d598a !important;
+    &:hover {
+      color: #fff !important;
+    }
   }
   &:hover {
     background-color: #0393cf;

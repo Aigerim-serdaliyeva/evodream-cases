@@ -36,7 +36,7 @@
               <img src="./img/logo.png" alt="">
             </a>
   
-            <h3 class="header__title">
+            <h3 class="header__title d-none d-sm-block">
               Международное агентство интернет-маркетинга  
             </h3>
           </div>          
@@ -149,14 +149,12 @@
           <div class="col-lg-4 col-md-12">
             <div class="visa__title">Образ созданного лендосайта</div>
             <div class="visa__image">
-              <a href="./img/openvisa-big-1.jpg" data-fancybox="certificateGallery" class="certificate">
+              <a href="./img/openvisa-big-1.jpg" target="_blank" >
                 <img src="./img/openvisa-1.jpg" alt="">
                </a>
-               <a href="./img/openvisa-big-2.jpg" data-fancybox="certificateGallery" class="certificate">
+               <a href="./img/openvisa-big-2.jpg" target="_blank" >
                 <img src="./img/openvisa-2.jpg" alt="">
                </a>
-              <!-- <img src="./img/openvisa-1.jpg" alt=""> -->
-              <!-- <img src="./img/openvisa-2.jpg" alt=""> -->
             </div>
           </div>
           <div class="col-lg-5 col-md-12">
@@ -405,8 +403,12 @@
           <div class="col-lg-4 col-12">
             <div class="visa__title">Образ созданного лендинга</div>
             <div class="visa__image">
-              <img src="./img/infovisa-1.jpg" alt="">
-              <img src="./img/infovisa-2.jpg" alt="">
+              <a href="./img/infovisa-big-1.jpg" target="_blank" >
+                <img src="./img/infovisa-1.jpg" alt="">
+              </a>
+              <a href="./img/infovisa-big-2.jpg" target="_blank" >
+                <img src="./img/infovisa-2.jpg" alt="">
+              </a>
             </div>
           </div>
           <div class="col-lg-5 col-12">
@@ -507,16 +509,16 @@
             <div class="pokazatel">
               <img class="pokazatel__block__bigimg" src="./img/big-pokazatel-2-1.jpg" alt="">
               <div class="pokazatel__block">
-                <div class="pokazatel__block__img active" data-id="4">
+                <div class="pokazatel__block__img active" data-id="2-1">
                   <img src="./img/pokazatel-2-1.jpg" alt="">
                   <div class="pokazatel__block__title">Показатели</div>
                 </div>
-                <div class="pokazatel__block__img" data-id="5">
+                <div class="pokazatel__block__img" data-id="2-2">
                   <img src="./img/pokazatel-2-2.jpg" alt="">
                   <div class="pokazatel__block__title">Скриншот
                       заявок с почты</div>
                 </div>
-                <div class="pokazatel__block__img" data-id="6">
+                <div class="pokazatel__block__img" data-id="2-3">
                   <img src="./img/pokazatel-2-3.jpg" alt="">
                   <div class="pokazatel__block__title">Примеры
                       заявок с почты</div>
@@ -588,11 +590,14 @@
         <div class="section-title">Отзыв заказчика:</div>
         <div class="row">
           <div class="col-lg-5 col-12 text-center">
-            <video width="455" controls>
-              <source src="./videos/interview2.mp4" type="video/mp4">
-              <source src="./videos/interview2.ogg" type="video/ogg">
-              Your browser does not support HTML5 video.
-            </video>
+            <label class="video__label">
+              <video controls>
+                <source src="./videos/interview2.mp4" type="video/mp4">
+                <source src="./videos/interview2.ogg" type="video/ogg">
+                Your browser does not support HTML5 video.
+              </video>
+              <img src="./img/video.jpg" class="video__img">
+            </label>
           </div>
           <div class="col-lg-7 col-12">
             <div class="review__author">Жумартов Алибек</div>

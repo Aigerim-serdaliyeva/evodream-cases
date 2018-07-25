@@ -158,10 +158,7 @@
   }
 
   .tooltip {
-    width: 200px;
-    &--right {
-      // display: block;
-    }
+    width: 220px;
   }
 
   .section {
@@ -195,15 +192,19 @@
     
     &-work {
       &__content {
-        justify-content: space-between;
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
       }
       .work {
-        width: 49%;
+        width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
 
         &__image {
-          width: 25%;
+          img {
+            margin: 0;
+          }
         }
       }
     }
@@ -240,10 +241,14 @@
     display: flex;
   }
 
+  .main-menu {
+    top: 74px;
+  }
+
   .s {
 
     &-main {
-      padding-top: 120px;
+      // padding-top: 120px;
       .form {
         margin-bottom: 20px;
       }
@@ -269,17 +274,6 @@
       ul {
         li {
           margin-bottom: 10px;
-        }
-      }
-    }
-
-    &-work {
-      .work {
-        &__image {
-          margin-right: 5px;
-        }
-        &__title {
-          font-size: 14px;
         }
       }
     }
@@ -343,7 +337,7 @@
     }
 
     &-thanks {
-      padding: 150px 0 50px;
+      // padding: 150px 0 50px;
       
       &-title {
         font-size: 30px;
@@ -391,4 +385,11 @@
 // ≤1200px
 @include media-breakpoint-up(xl) {
 	
+}
+
+// ≤1920px
+@media only screen and (min-width: 1920px)  {
+	.s-thanks {
+    background-size: cover;
+  }
 }

@@ -22,7 +22,7 @@ $(document).ready(function () {
   new WOW({ mobile: false }).init();
 
   if ($wnd.width() < 992) {
-    headerHeight = 87;
+    headerHeight = 74;
   }
 
   // jquery.maskedinput для ПК и планшет (мобильном не подключаем)
@@ -205,9 +205,14 @@ $(document).ready(function () {
       var $tooltip = $this.find(".tooltip");
       $tooltip.removeClass("active");
       $tooltip.removeClass("tooltip--right");
-    });
+    });    
   }
 
+  $(".video__img").click( function () {
+    var $this = $(this);
+    $this.siblings("video")[0].play();
+    $this.hide();
+  });
 
   $(".carousel-certificates").owlCarousel({
     loop: true,
