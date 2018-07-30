@@ -166,8 +166,8 @@ $(document).ready(function () {
     $block.find(".pokazatel__block__img").removeClass("active");
     $this.addClass("active");
     var id = $this.data("id");
-    $block.find(".pokazatel__block__bigimg").attr("src", "/img/big-pokazatel-" + id + ".jpg");
-    console.log($block.find(".pokazatel__block__bigimg"));
+    $block.find(".pokazatel__block__big").attr("href", "/img/large-pokazatel-" + id + ".jpg");
+    $block.find(".pokazatel__block__big img").attr("src", "/img/big-pokazatel-" + id + ".jpg");
   });
 
   if ($wnd.width() < 576) {    
