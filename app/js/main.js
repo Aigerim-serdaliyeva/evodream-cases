@@ -145,7 +145,7 @@ $(document).ready(function () {
     if (formValid) {
       // если нет utm
       if (Object.keys(utms).length === 0) {
-        utms['utm'] = "Прямой переход";
+        utms['utm_source'] = "Прямой переход";
       }
       // создаем скрытые поля для utm внутрии формы
       for (var key in utms) {
